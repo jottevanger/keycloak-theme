@@ -1,0 +1,40 @@
+/*
+custom styles for the E-Varamu login page
+*/
+
+#kc-form-login {
+    display: none;
+  }
+  
+  h4 {
+    display: none;
+  }
+  
+  #kc-header-wrapper {
+    display: none;
+  }
+  
+  html body {
+    background-image: none;
+    background-color: #F9F7F1;
+  }
+  
+  div.card-pf::before {
+    content:url('../img/ev-logo.svg');
+    
+  }
+  
+  div.card-pf{
+    border-top:0px
+  }
+  
+  a.pf-c-button.pf-m-control.pf-m-block.kc-social-item.kc-social-gray {
+    background-color: #ECE5D0;
+  }
+
+  span.taat-logo {
+    background-image: url('../img/taat-logo.png');
+  }
+  span.tara-logo {
+    background-image: url('../img/tara-logo.png');
+  }
