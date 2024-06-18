@@ -92,7 +92,7 @@
                                     <img src="${url.resourcesPath}/img/taat-logo.png" alt="${p.displayName!}"/>
                                     <i aria-hidden="true"></i>
                                 <#elseif p.displayName?contains("TARA")>
-                                    <img href="${url.resourcesPath}/img/tara-logo.png" alt="${p.displayName!}"/>
+                                    <img src="${url.resourcesPath}/img/tara-logo.png" alt="${p.displayName!}"/>
                                     <i aria-hidden="true"></i>
                                 </#if>
                             </a>
