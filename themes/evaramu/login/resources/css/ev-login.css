@@ -15,8 +15,8 @@ custom styles for the E-Varamu login page
   }
   
   html body {
-    background-image: none;
-    background-color: #F9F7F1;
+    background-image: none !important;
+    background-color: #F9F7F1 !important;
   }
   
   div.card-pf::before {
