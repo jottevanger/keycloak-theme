@@ -38,3 +38,15 @@ custom styles for the E-Varamu login page
   span.tara-logo {
     background-image: url('../img/tara-logo.png');
   }
+
+  ul.kc-social-links{
+    list-style: none;
+  }
+
+  .kc-social-links li{
+    margin-bottom: 20px;
+  }
+
+  .kc-social-links li i{
+    visibility: hidden;
+  }

@@ -84,21 +84,22 @@
             <div id="kc-social-providers" class="${properties.kcFormSocialAccountSectionClass!}">
                 <hr/>
                 <!--h4>${msg("identity-provider-login-label")}</h4-->
-
-                <ul class="${properties.kcFormSocialAccountListClass!} <#if social.providers?size gt 3>${properties.kcFormSocialAccountListGridClass!}</#if>">
+                <ul class="${properties.kcFormSocialAccountListClass!}">
                     <#list social.providers as p>
-                        <a id="social-${p.alias}" href="${p.loginUrl}">
-                            <#if p.iconClasses?has_content>
-                                <i class="${properties.kcCommonLogoIdP!} ${p.iconClasses!}" aria-hidden="true"></i>
-                                <span class="${properties.kcFormSocialAccountNameClass!} kc-social-icon-text">${p.displayName!}</span>
-                            <#else>
-                                <span class="${properties.kcFormSocialAccountNameClass!}">${p.displayName!}</span>
-                            </#if>
-                        </a>
+                        <li>
+                            <a id="social-${p.alias}" href="${p.loginUrl}" title="${p.displayName!}">
+                                <#if p.displayName?contains("TAAT")>
+                                    <img src="${url.resourcesPath}/img/taat-logo.png" alt="${p.displayName!}"/>
+                                    <i aria-hidden="true"></i>
+                                <#elseif p.displayName?contains("TARA")>
+                                    <img href="${url.resourcesPath}/img/tara-logo.png" alt="${p.displayName!}"/>
+                                    <i aria-hidden="true"></i>
+                                </#if>
+                            </a>
+                        </li>
                     </#list>
                 </ul>
             </div>
         </#if>
     </#if>
-
 </@layout.registrationLayout>
